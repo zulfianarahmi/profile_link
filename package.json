@@ -1,0 +1,35 @@
+{
+  "name": "social-media-links-website",
+  "version": "1.0.0",
+  "description": "Website sederhana untuk menampilkan link social media dengan desain modern dan responsive",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "social-media",
+    "links",
+    "website",
+    "responsive",
+    "modern-design",
+    "instagram",
+    "twitter",
+    "linkedin",
+    "github",
+    "threads"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/social-media-links-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/social-media-links-website/issues"
+  },
+  "homepage": "https://yourusername.github.io/social-media-links-website",
+  "devDependencies": {},
+  "dependencies": {}
+} 

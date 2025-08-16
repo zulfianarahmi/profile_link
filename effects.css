@@ -1,0 +1,130 @@
+
+
+.terminal-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: #00ff00;
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.linux-icon {
+    position: relative;
+}
+
+.linux-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    animation: shadow 2s ease-in-out infinite;
+}
+
+@keyframes shadow {
+    0%, 100% { transform: translateX(-50%) scaleX(1); }
+    50% { transform: translateX(-50%) scaleX(0.8); }
+}
+
+.flower-petal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, #ff6b9d, #c44569);
+    border-radius: 50% 0 50% 0;
+    animation: petalFall 4s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes petalFall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.flower-petal:nth-child(1) { left: 10%; animation-delay: 0s; }
+.flower-petal:nth-child(2) { left: 20%; animation-delay: 1s; }
+.flower-petal:nth-child(3) { left: 30%; animation-delay: 2s; }
+.flower-petal:nth-child(4) { left: 40%; animation-delay: 3s; }
+.flower-petal:nth-child(5) { left: 50%; animation-delay: 4s; }
+.flower-petal:nth-child(6) { left: 60%; animation-delay: 5s; }
+.flower-petal:nth-child(7) { left: 70%; animation-delay: 6s; }
+.flower-petal:nth-child(8) { left: 80%; animation-delay: 7s; }
+.flower-petal:nth-child(9) { left: 90%; animation-delay: 8s; }
+
+
+
+.neon-glow {
+    text-shadow: 
+        0 0 5px currentColor,
+        0 0 10px currentColor,
+        0 0 15px currentColor,
+        0 0 20px currentColor;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+}
+
+.holographic {
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #80ff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080
+    );
+    background-size: 400% 400%;
+    animation: holographic 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes holographic {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+} 
