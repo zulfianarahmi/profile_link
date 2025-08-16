@@ -253,6 +253,11 @@ body::after {
     position: relative;
 }
 
+.tiktok {
+    background: linear-gradient(45deg, #000000, #25f4ee, #fe2c55);
+    position: relative;
+}
+
 .social-link::after {
     content: '>';
     position: absolute;

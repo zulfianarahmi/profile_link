@@ -39,6 +39,12 @@ const SOCIAL_MEDIA_CONFIG = {
         url: "https://medium.com/@zulfianarahmi4",
         name: "Medium",
         enabled: true
+    },
+    
+    tiktok: {
+        url: "https://www.tiktok.com/@rahmi_zlfrhmi?_t=ZS-8yuc4fmnBdI&_r=1",
+        name: "TikTok",
+        enabled: true
     }
 };
 
